@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #000; /* Black heading */
+        }
+        h3 {
+            margin-top: 20px;
+            text-align: center;
+            color: #000; /* Black heading */
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        center {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DermDetectNet</h1>
+        <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+        <h3>Prediction: {{ data }}</h3>
+        <p>Disease Description: {{ description }}</p>
+        <p>Symptoms: {{ Symptoms }}</p>
+        <p>Medical Recommendation: {{ recommendation }}</p>
+    </div>
+</body>
+</html>

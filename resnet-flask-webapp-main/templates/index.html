@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>base</title>
+</head>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 10px auto;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top:20px;
+            height:40px;
+            width:120px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .group-members {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+<body>
+
+	<h1>DermDetectNet: Skin Disease Identification And Recommendation Using Deep Learning</h1>
+
+	<form action="prediction" method="POST" enctype="multipart/form-data">
+		<input type="file" name="img">
+		<input type="submit" name="btn">
+	</form>
+
+    <!-- Group Members Section -->
+    <div class="group-members">
+        <h3>Group Members</h3>
+        <ul>
+            <li>Abhishek Lamture-27</li>
+            <li>Darshan Rakhde-38</li>
+            <li>Ayush Warvanshi - 37</li>
+            <li>Divesh Bante - 39</li>
+        </ul>
+    </div>
+
+</body>
+</html>
