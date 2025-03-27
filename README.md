@@ -88,10 +88,9 @@
 
 | Endpoint              | Method | Description                   |
 |-----------------------|--------|-------------------------------|
-| `/api/predict`         | POST   | Upload and predict disease    |
-| `/api/user/register`   | POST   | Register new user             |
-| `/api/user/login`      | POST   | User login                    |
-| `/api/history`         | GET    | Retrieve prediction history   |
+| `/`                    | POST   | Upload and predict disease    |
+| `/prediction`          | POST   | prediction and imformation |            |
+
 
 
 
